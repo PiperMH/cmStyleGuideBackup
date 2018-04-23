@@ -1,0 +1,199 @@
+/* color blocks */
+.colorInfo{
+    margin-bottom: 5rem;
+}
+.colorIntro{
+    margin-bottom: 1rem;
+}
+.colorBlock{
+    height: 2rem;
+    width:100%;
+    margin-bottom: .5rem;
+}
+.colorBlockInfo{
+    height: 2rem;
+    margin-bottom: .5rem;
+}
+.fontExample{
+    font-size: 2rem;
+}
+.primaryTeal{
+    background-color: #63C6C3;
+}
+.primaryGrey{
+    background-color: #636466
+}
+.secondaryTeal{
+    background-color:  #AFDEDA
+}
+.secondaryGrey{
+    background-color:  #939598
+}
+.secondaryYellow{
+    background-color: #FEE4B8
+}
+/*Grid*/
+.oneOne, .oneTwo, .oneThree, .oneFour, .oneTwelve{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+.gridInfo{
+    margin-bottom: 5rem;
+}
+
+/* Typography */
+.typographyInfo{
+    margin-bottom: 5rem;
+}
+h1{
+    font-family: "metropolis", sans-serif;
+    font-weight: bold;
+}
+h2{
+    font-family: "metropolis", sans-serif;
+    font-weight: 500;
+}
+h3{
+    font-family:  "metropolis", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+body{
+    font-family: "metropolis", sans-serif;
+    font-weight: normal;
+    color: #636466;
+}
+.fontTitle{
+    margin-bottom: 1.5rem;
+}
+.fontExample{
+    margin-bottom: 1.5rem;
+}
+.fontBold{
+    font-family: "metropolis", sans-serif;
+    font-weight: bold;
+}
+.fontMedium{
+    font-family: "metropolis", sans-serif;
+    font-weight: 500; 
+}
+.fontLight{
+    font-family: "metropolis", sans-serif;
+    font-weight: lighter;
+}
+.fontRegular{
+    font-family: "metropolis", sans-serif;
+    font-weight: normal;
+}
+.fontBlack{
+    font-family: "metropolis", sans-serif;
+    font-weight: 900;
+}
+.tableHeader{
+    margin-bottom: 1rem;
+}
+.typographyTable, .typographyTable.table td{
+    border: 0;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0;
+    padding-top:.5rem;
+    padding-bottom: .5rem;
+}
+.fontTypes{
+    margin-top: 2rem;
+}
+/*Feedback*/
+.feedbackContainer{
+    margin-bottom: 5rem;
+}
+.badgeTable{
+    margin-bottom: 2rem;
+}
+.badgesTitle{
+    margin-bottom: 1rem;
+}
+.badge.nonTable{
+    width: 100%;
+    color: white;
+    font-weight: normal;
+    font-size: 1.5em;
+    padding: .5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: .5rem;
+}
+.greenBadge {
+    background-color: #3bd352;
+
+}
+.redBadge{
+    background-color: #e03c3c; 
+}
+.yellowBadge{
+    background-color: #ffc128; 
+}
+.tealBadge{
+    background-color: #63C6C3; 
+}
+.purpleBadge{
+    background-color: #7813d3; 
+}
+.feedbackTitle{
+    margin-bottom: 1rem;
+}
+
+/* Link */
+a.nav-link{
+    color: #63C6C3;
+}
+a.nav-link:active{
+    background-color: #f9fdff;  
+}
+a.nav-link:hover{
+    background-color: #f9fdff;
+}
+
+/*Icons*/
+.iconTitle{
+    margin-bottom: 1rem;
+}
+.iconContainer{
+    margin-bottom: 5rem;
+}
+
+/*Buttons*/
+.buttonTitle{
+    margin-bottom: 1rem;
+}
+.buttonContainer{
+    margin-bottom: 5rem;
+}
+
+/*Buttons*/
+#search-btn{
+    background-color: #63C6C3;    
+    border: #63C6C3;
+}
+.searchBtnTitle{
+ margin-bottom: 1rem;
+}
+.searchBtnRow{
+    margin-bottom: 1rem;
+}
+
+a.page-link.pageNumber{
+    color: #fff;
+    background-color: #63C6C3;
+}
+
+a.page-link.pageArrow{
+    color: #fff;
+}
+
+/*Tables*/
+.tableInfo{
+    margin-bottom: 5rem;
+}
+

@@ -1,0 +1,67 @@
+/**
+ * Metropolis Font 
+ * https://github.com/chrismsimpson/Metropolis
+ * Licensed under Open Font License (OFL). Available to anyone and everyone. Contributions welcome.
+ * Contact me via chris.m.simpson@icloud.com or http://twitter.com/ChrisMSimpson for any questions, requests or improvements 
+ * You can now support work on Metropolis via Patreon at https://www.patreon.com/metropolis.
+ */
+ 
+ @font-face {
+    font-family: 'metropolis';
+    src: url('../fonts/metropolis/EOT/Metropolis-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/metropolis/EOT/Metropolis-Regular.eot#iefix') format('embedded-opentype'),
+    url('../fonts/metropolis/WOFF/Metropolis-Regular.woff') format('woff'), /* Super Modern Browsers */
+    url('../fonts/metropolis/WOFF2/Metropolis-Regular.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../fonts/metropolis/EOT/Metropolis-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/metropolis/EOT/Metropolis-Black.eot#iefix') format('embedded-opentype'),
+    url('../fonts/metropolis/WOFF/Metropolis-Black.woff') format('woff'), /* Super Modern Browsers */
+    url('../fonts/metropolis/WOFF2/Metropolis-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../fonts/metropolis/EOT/Metropolis-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/metropolis/EOT/Metropolis-Bold.eot#iefix') format('embedded-opentype'),
+    url('../fonts/metropolis/WOFF/Metropolis-Bold.woff') format('woff'), /* Super Modern Browsers */
+    url('../fonts/metropolis/WOFF2/Metropolis-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../fonts/metropolis/EOT/Metropolis-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/metropolis/EOT/Metropolis-Medium.eot#iefix') format('embedded-opentype'),
+    url('../fonts/metropolis/WOFF/Metropolis-Medium.woff') format('woff'), /* Super Modern Browsers */
+    url('../fonts/metropolis/WOFF2/Metropolis-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../fonts/metropolis/EOT/Metropolis-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/metropolis/EOT/Metropolis-Light.eot#iefix') format('embedded-opentype'),
+    url('../fonts/metropolis/WOFF/Metropolis-Light.woff') format('woff'), /* Super Modern Browsers */
+    url('../fonts/metropolis/WOFF2/Metropolis-Light.woff2') format('woff2');
+    font-weight: lighter;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../fonts/metropolis/EOT/Metropolis-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/metropolis/EOT/Metropolis-MediumItalic.eot#iefix') format('embedded-opentype'),
+    url('../fonts/metropolis/WOFF/Metropolis-MediumItalic.woff') format('woff'), /* Super Modern Browsers */
+    url('../fonts/metropolis/WOFF2/Metropolis-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style:italic;
+}
