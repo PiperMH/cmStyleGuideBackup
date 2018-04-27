@@ -41,6 +41,9 @@
 .gridInfo{
     margin-bottom: 5rem;
 }
+.scriptMarkup{
+    margin-bottom: 1rem;
+}
 
 /* Typography */
 .typographyInfo{
@@ -105,11 +108,14 @@ body{
     margin-top: 2rem;
 }
 /*Feedback*/
+.tableRow{
+    margin-bottom: 2rem;
+}
 .feedbackContainer{
     margin-bottom: 5rem;
 }
 .badgeTable{
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 .badgesTitle{
     margin-bottom: 1rem;
@@ -126,7 +132,6 @@ body{
 }
 .greenBadge {
     background-color: #3bd352;
-
 }
 .redBadge{
     background-color: #e03c3c; 
@@ -192,8 +197,32 @@ a.page-link.pageArrow{
     color: #fff;
 }
 
+.pageLinkExample{
+    font-weight: bold;
+    color: #63C6C3;
+}
+.pageLinkExample:hover{
+font-weight: 900;
+    color: #379895;
+}
+.pageination{
+    margin-bottom: 1rem;
+}
+.paginationTitle{
+    margin-bottom: 1rem;
+}
+
 /*Tables*/
 .tableInfo{
     margin-bottom: 5rem;
+}
+.tableExampleRow{
+    margin-bottom: 2rem;
+}
+.requiredTitle, .componentTitle{
+    margin-bottom: 1rem;
+}
+.linkScript{
+    margin-bottom: 1rem;
 }
 

@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.5/css/select.bootstrap4.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
     integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="./css/prism.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet"/>
     <link href="./css/fonts.css" rel="stylesheet"/>
     <title>Corsicana Mattress Style Guide</title>
@@ -29,7 +30,7 @@
         <div class="col-sm-12 col-md-12 col-lg-2 d-flex justify-content-end">
             <ul class="nav flex-column">
                 <li class="nav-item"><a class="nav-link active" href="#">Colors</a></li>
-                <li class="nav-item"><a class="nav-link" href="#grid">Gird</a></li>
+                <li class="nav-item"><a class="nav-link" href="#grid">Grid</a></li>
                 <li class="nav-item"><a class="nav-link" href="#typography">Typograhy</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tables">Tables</a></li>
                 <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
@@ -51,7 +52,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-5 col-lg-6">
+                    <div class="col-sm-12 col-md-5 col-lg-5">
                             <div class="colorBlock primaryTeal"></div>
                             <div class="colorBlock primaryGrey"></div>
                             <div class="colorBlock secondaryTeal"></div>
@@ -199,6 +200,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-10">
+                        <div class="scriptMarkup"><pre><code class="language-markup">&lt;script src=&quot;http://code.jquery.com/jquery-3.3.1.min.js&quot; integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js&quot; integrity=&quot;sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js&quot; integrity=&quot;sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</code></pre></div>
+                        <pre><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css&quot; integrity=&quot;sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm&quot; crossorigin=&quot;anonymous&quot;&gt;</code></pre>
+                    </div>
+                </div>
             </div>
             <!-- Section's End -->
 
@@ -209,7 +218,7 @@
                         <h1>TABLES</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row tableExampleRow">
                     <div class="col-sm-12 col-md-12 col-lg-10">
                         <table id="example" class="display nowrap" style="width:100%">
                             <thead>
@@ -296,6 +305,24 @@
                         </table>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-10">
+                        <h3 class="requiredTitle">Required</h3>
+                        <div class="linkScript"><pre><code class="language-markup">&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.datatables.net/v/bs4/dt-1.10.16/r-2.2.1/datatables.min.js&quot;&gt;&lt;/script&gt;</code></pre></div>
+                        <div class="linkScript"><pre><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.datatables.net/v/bs4/dt-1.10.16/r-2.2.1/datatables.min.css&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.datatables.net/select/1.2.5/css/select.bootstrap4.min.css&quot;&gt;</code></pre></div>
+
+                    <h3 class="componentTitle">Components</h3>
+                    <div class="component"><pre><code class="language-javascript">$('#example').DataTable( {
+    responsive: true,
+    columnDefs: [
+        { responsivePriority: 1, targets: 0 },
+        { responsivePriority: 2, targets: -2 }
+    ]
+} );</code></pre></div>
+                    </div>
+                </div>
+
             </div>
             <!-- Section's End -->
 
@@ -360,7 +387,7 @@
                         <h1>FEEDBACK</h1>
                     </div>
                 </div>
-                <div class="row">  
+                <div class="row tableRow">
                     <div class="col-sm-12 col-md-5 col-lg-10">
                         <h3 class="badgesTitle">Badges</h3>
                         <table class="table badgeTable">
@@ -372,14 +399,17 @@
                                 <tr><td><span class="badge nonTable purpleBadge rounded-0">FedEx</span></td><td> FedEx</td><td>#7813d3</td></tr>
                             </tbody>
                         </table>
+                       <pre><code class="language-markup">&lt;span class=&quot;badge primary rounded-0&quot;&gt;Delivered&lt;/span&gt;</code></pre>
+                       <pre><code class="language-css">span.orderStatus{font-weight: normal;font-size: 1.5em;padding: .5rem;padding-left: 2.5rem;padding-right: 2.5rem;}</code></pre>
                     </div>
-                </div>    
+                </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-5 col-lg-10">
                         <h3 class="feedbackTitle">Feedback Blocks</h3> 
                         <div class="alert alert-danger" role="alert">
                                 Error Notification
                         </div>
+                        <pre><code class="language-markup">&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;&lt;/div&gt;</code></pre>
                     </div>
                 </div>
                 
@@ -421,9 +451,10 @@
                 </div>
             </div> 
             <!-- Section's End -->
-
             <!-- Button Section -->  
             <div class="container buttonContainer" id="buttons">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-10 buttonTitle">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-10 buttonTitle">
                         <h1>BUTTONS</h1>
@@ -435,39 +466,75 @@
                     </div>
                 </div>
                 <div class="row searchBtnRow">
-                    <div class="col-sm-12 col-md-5 col-lg-2">        
+                    <div class="col-sm-12 col-md-5 col-lg-2 d-flex align-items-center">
                         <button class="btn btn-primary btn-block" id="search-btn">
                             <i class="fas fa-search"></i>
                         </button>      
                     </div>
-                    <div class="col-sm-12 col-md-5 col-lg-2"> 
+                    <div class="col-sm-12 col-md-5 col-lg-10 d-flex align-items-center">
+                        <pre><code class="language-markup"> &lt;button class=&quot;btn btn-primary btn-block&quot; id=&quot;search-btn&quot;&gt;&lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt;&lt;/button&gt;   </code></pre>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-2 d-flex align-items-center">
                         <button class="btn btn-primary btn-block" id="search-btn">
                             <i class="fas fa-circle-notch fa-spin"></i>
                         </button>
                     </div>
+                    <div class="col-sm-12 col-md-5 col-lg-10 d-flex align-items-center">
+                        <pre><code class="language-markup">&lt;button class=&quot;btn btn-primary btn-block&quot; id=&quot;search-btn&quot;&gt;&lt;i class=&quot;fas fa-circle-notch fa-spin&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+                    </div>
                 </div>
 
                 <div class="row">
-                        <div class="col-sm-12 col-md-5 col-lg-10 searchBtnTitle">
-                        <h3>Pagination Button</h3>
+                    <div class="col-sm-12 col-md-5 col-lg-2 searchBtnTitle">
+                    <h3>Pagination Button</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-2">
+                        <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link pageArrow" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link pageNumber" href="#">1</a></li>
+                        <li class="page-item">
+                            <a class="page-link pageArrow" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-10">
+                        <pre><code class="language-markup">&lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+        &lt;a class=&quot;page-link pageArrow&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link pageNumber&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+        &lt;a class=&quot;page-link pageArrow&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5 col-lg-10 paginationTitle">
+                            <h3>Page Links</h3>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-5 col-lg-2">        
-                            <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link pageArrow" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link pageNumber" href="#">1</a></li>
-                            <li class="page-item">
-                                <a class="page-link pageArrow" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                            </ul>
+                        <div class="col-sm-12 col-md-5 col-lg-2 d-flex align-items-center">
+                            <a class="pageLinkExample" href="#">Page Link</a>
                         </div>
+                        <div class="col-sm-12 col-md-5 col-lg-10">
+                            <pre><code class="language-markup">&lt;a class=&quot;pageLinkExample&quot; href=&quot;#&quot;&gt;Page Link&lt;/a&gt;</code></pre>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div> 
             <!-- Section's End -->
@@ -484,8 +551,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
     integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>   
-    <script>  
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="./js/prism.js"></script>
+    <script>
     // SMOOTH SCROLLING
     $(document).ready(function() {
         $('#example').DataTable( {
